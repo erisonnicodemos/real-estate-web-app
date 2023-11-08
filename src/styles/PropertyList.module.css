@@ -1,0 +1,77 @@
+.propertyList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 2rem;
+  max-width: 880px;
+  margin: auto;
+}
+
+.propertyCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.propertyImage {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.propertyPrice {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+.viewDetailsButton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #b93d20;
+  color: #fff;
+  text-decoration: none;
+  border: 0px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.viewDetailsButton:hover {
+  background-color: #a3391a;
+}
+
+@media (max-width: 1200px) {
+  .propertyCard {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .propertyCard {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .propertyCard {
+    width: calc(100% - 2rem);
+  }
+}
+
+.loadMoreButton {
+  background-color: #d14124;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2rem auto;
+  display: block;
+  width: 100%;
+}
